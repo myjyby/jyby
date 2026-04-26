@@ -38,10 +38,10 @@ def run ():
       makedirs(page_dir)
 
     ## Resolve the absolute paths
-    with open(join(page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
-      html = resolveAbsPaths(infile)
-      outfile.write(html)
-    # copyfile(join(pages_dir, "__template__.html"), join(page_dir, "index.html"))
+    # with open(join(page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
+    #   html = resolveAbsPaths(infile)
+    #   outfile.write(html)
+    copyfile(join(pages_dir, "__template__.html"), join(page_dir, "index.html"))
 
     data = loads(open(join(root, "public/data/", k)).read())
     for d in data:
@@ -52,10 +52,10 @@ def run ():
           makedirs(content_page_dir)
 
         ## Resolve the absolute paths
-        with open(join(content_page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
-          html = resolveAbsPaths(infile)
-          outfile.write(html)
-        # copyfile(join(pages_dir, "__template__.html"), join(content_page_dir, "index.html"))
+        # with open(join(content_page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
+        #   html = resolveAbsPaths(infile)
+        #   outfile.write(html)
+        copyfile(join(pages_dir, "__template__.html"), join(content_page_dir, "index.html"))
 
 if __name__ == "__main__":
   run()
