@@ -15,7 +15,7 @@ async function onLoad () {
   /*
   Get the data
   */
-  const data = await d3.json(`/public/data/${page}.json`)
+  const data = await d3.json(`/jyby/public/data/${page}.json`)
   .then(json => {
     return arrays.nest.call(json, { key: sort_by });
   }).catch(err => console.log(err));
