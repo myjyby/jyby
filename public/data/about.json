@@ -4,7 +4,29 @@
     "type": "paragraph",
     "title": null,
     "vignette": "",
-    "description": "Hi! My name is Jeremy Boy. I am a senior creative technologist and scientist with 10+ years of experience working at the intersection of research, analytics, product, policy and programme, focused on the benefits and trade-offs of data, advanced computational techniques and design applied to public policy, humanitarian action, and sustainable development. I am currently the lead data scientist of a global learning network on sustainable development priorities and challenges&mdash;the UNDP Accelerator Labs Network. My professional experience spans from data and AI thought leadership and strategy in the public sector  to team management,  to end-to-end visual analytics product development, to visual storytelling. I have an interdisciplinary background in graphic design and multi-media art, computer science, cognitive psychology, and science and technology studies.",
+    "description": "Hi! My name is Jeremy Boy. I am a senior creative technologist and scientist with 15 years of experience working at the intersection of research, analytics, product, policy and programme, focused on the benefits and trade-offs of data, advanced computational techniques and design when pplied to public policy, humanitarian action, and sustainable development. I am currently the lead data scientist of a global learning network on sustainable development priorities and challenges&mdash;the UNDP Accelerator Labs Network. My professional experience spans from data and AI thought leadership and strategy in the public sector  to team management,  to end-to-end visual analytics product development, to visual storytelling. I have an interdisciplinary background in graphic design and multi-media art, computer science, cognitive psychology, and science and technology studies.",
     "year": null
+  },
+  {
+    "category": "Public speaking",
+    "type": "vignette",
+    "title": "What and How we Learned",
+    "vignette": "public/imgs/presentations/sdg_commons_launch.jpeg",
+    "description": "Launch of the SDG Innovation Commons.",
+    "year": 2025,
+    "organizations": ["UNDP"],
+    "contributions": ["presenter"],
+    "link": "https://undp.zoom.us/rec/play/Pp42xsI-UqBg8dg58YYs7HNCs17Wg4PsQx9vY9aYGR2rlvHfXxvc6PwKAdZ2mYCMXWnDbZA4CTZZZlP3.jlZxhUxsmIFz8rzB"
+  },
+  {
+    "category": "Public speaking",
+    "type": "vignette",
+    "title": "Artificial Intelligence for Collective Intelligence",
+    "vignette": "public/imgs/presentations/ai4ci.jpeg",
+    "description": "Presentation of the framework and roadmap for AI4CI research and development.",
+    "year": 2025,
+    "organizations": ["UN 2.0 Week", "UNDP"],
+    "contributions": ["presenter"],
+    "link": "https://www.youtube.com/watch?v=bP0Tyk7kKA8"
   }
 ]

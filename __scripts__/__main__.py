@@ -21,11 +21,9 @@ def makeSafe (path):
 #     html += line
 #   return html
 
-def setBasepath(file, basepath):
-  html = file.read()
+def setBasepath(html, basepath):
   html = sub(r"{{[^}]*}}", lambda x: basepath, html)
   return html
-
 
 def run (basepath):
   """
@@ -33,9 +31,17 @@ def run (basepath):
   """
   this_dir = dirname(__file__)
   root = join(this_dir, "../")
+
   pages_dir = join(root, "pages/")
   if not exists(pages_dir):
     makedirs(pages_dir)
+
+  template = setBasepath(open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8').read(), basepath)
+
+  ## Resolve the relative paths for the home page
+  with open(join(root, "index.html"), 'w') as outfile:
+    # html = setBasepath(template, basepath)
+    outfile.write(template)
   
   for k in listdir(join(root, "public/data/")):
     category_page = splitext(k)[0]
@@ -43,10 +49,10 @@ def run (basepath):
     if not exists(page_dir):
       makedirs(page_dir)
 
-    ## Resolve the absolute paths
-    with open(join(page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
-      html = setBasepath(infile, basepath)
-      outfile.write(html)
+    ## Resolve the relative paths
+    with open(join(page_dir, "index.html"), 'w') as outfile:
+      # html = setBasepath(template, basepath)
+      outfile.write(template)
     # copyfile(join(pages_dir, "__template__.html"), join(page_dir, "index.html"))
 
     data = loads(open(join(root, "public/data/", k)).read())
@@ -57,10 +63,10 @@ def run (basepath):
         if not exists(content_page_dir):
           makedirs(content_page_dir)
 
-        ## Resolve the absolute paths
-        with open(join(content_page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
-          html = setBasepath(infile, basepath)
-          outfile.write(html)
+        ## Resolve the relative paths
+        with open(join(content_page_dir, "index.html"), 'w') as outfile:
+          # html = setBasepath(template, basepath)
+          outfile.write(template)
         # copyfile(join(pages_dir, "__template__.html"), join(content_page_dir, "index.html"))
 
 if __name__ == "__main__":

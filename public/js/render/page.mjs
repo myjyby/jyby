@@ -8,8 +8,15 @@ export const main = function (data, kwargs) {
   */
   d3.selectAll('header menu li a')
   .classed('active', function () {
-    return path.includes(this.textContent.trim().toLowerCase());
+    const content = this.textContent.trim().toLowerCase();
+    return path.includes(content);
   });
+  if (!d3.selectAll('header menu li a.active').size()) {
+    /*
+    If on the homepage, default to the first tab as active
+    */
+    d3.select('header menu li a').classed('active', true);
+  }
 
   /* 
   Add the page title
@@ -43,9 +50,13 @@ export const main = function (data, kwargs) {
       .each(function (c) {
         const _sel = d3.select(this);
         _sel.classed(c.type, true)
-      })
-      // .addElems('a')
-        // .attr('href', c => c.title ? `./${strings.makeSafe.call(c.title)}` : null);
+      }).addElems('a')
+        .attr('target', c => c.link ? '_blank' : null)
+        .attr('href', c => {
+          if (c.link) return c.link;
+          else return null;
+          // c.title ? `./${strings.makeSafe.call(c.title)}` : null
+        });
       entries.addElems('label', 'year', c => c.year ? [c.year] : [])
       .html(c => {
         if (Array.isArray(c)) return `${c[0]} - ${arrays.last.call(c)}`;

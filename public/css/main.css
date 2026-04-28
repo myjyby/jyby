@@ -51,7 +51,7 @@ menu {
 section {
   margin: 2em 0;
 }
-section.content-section .two-col > div:not(:empty) {
+section.content-section .two-col > div:not(:empty):not(.paragraphs) {
   padding: 1em 0;
   /*border-top: 1px solid rgb(50,50,70);*/
   border-top: 1px solid #8c8ca0;

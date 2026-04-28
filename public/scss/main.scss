@@ -57,7 +57,7 @@ section {
 
   &.content-section {
     .two-col {
-      & > div:not(:empty) {
+      & > div:not(:empty):not(.paragraphs) {
         padding: 1em 0;
         /*border-top: 1px solid rgb(50,50,70);*/
         border-top: 1px solid rgb(140,140,160);
