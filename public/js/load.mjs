@@ -9,7 +9,7 @@ async function onLoad () {
   const { pathname, searchParams } = url;
   const path = pathname.split('/').filter(d => d !== '');
   let page = arrays.last.call(path);
-  if (!page) page = 'about';
+  if (!page || page === 'jyby') page = 'about';
   let sort_by = searchParams.get('sort_by');
   if (!sort_by) sort_by = 'category';
   /*
