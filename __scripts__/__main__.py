@@ -1,6 +1,6 @@
 from json import loads
-# from sys import path as syspath, argv
-from os import makedirs, listdir, getcwd
+from sys import argv
+from os import makedirs, listdir
 from os.path import join, exists, dirname, splitext, relpath
 from shutil import copyfile
 from re import sub
@@ -9,19 +9,25 @@ from pathlib import Path
 def makeSafe (path):
   return sub(r'[^a-z0-9]', '_', path.lower())
 
-def reconstructPath (string):
-  path = sub(r"[\{\}]+", "", string)
-  return join("/jyby/", path[1:])
+# def reconstructPath (string):
+#   path = sub(r"[\{\}]+", "", string)
+#   return join("/jyby/", path[1:])
 
-def resolveAbsPaths (file):
-  html = ""
-  # print(root)
-  for line in file:
-    line = sub(r"{{[^}]*}}", lambda x: reconstructPath(x.group()), line)
-    html += line
+# def resolveAbsPaths (file):
+#   html = ""
+#   # print(root)
+#   for line in file:
+#     line = sub(r"{{[^}]*}}", lambda x: reconstructPath(x.group()), line)
+#     html += line
+#   return html
+
+def setBasepath(file, basepath):
+  html = file.read()
+  html = sub(r"{{[^}]*}}", lambda x: basepath, html)
   return html
 
-def run ():
+
+def run (basepath):
   """
   Get the data
   """
@@ -38,10 +44,10 @@ def run ():
       makedirs(page_dir)
 
     ## Resolve the absolute paths
-    # with open(join(page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
-    #   html = resolveAbsPaths(infile)
-    #   outfile.write(html)
-    copyfile(join(pages_dir, "__template__.html"), join(page_dir, "index.html"))
+    with open(join(page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
+      html = setBasepath(infile, basepath)
+      outfile.write(html)
+    # copyfile(join(pages_dir, "__template__.html"), join(page_dir, "index.html"))
 
     data = loads(open(join(root, "public/data/", k)).read())
     for d in data:
@@ -52,10 +58,15 @@ def run ():
           makedirs(content_page_dir)
 
         ## Resolve the absolute paths
-        # with open(join(content_page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
-        #   html = resolveAbsPaths(infile)
-        #   outfile.write(html)
-        copyfile(join(pages_dir, "__template__.html"), join(content_page_dir, "index.html"))
+        with open(join(content_page_dir, "index.html"), 'w') as outfile, open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8') as infile:
+          html = setBasepath(infile, basepath)
+          outfile.write(html)
+        # copyfile(join(pages_dir, "__template__.html"), join(content_page_dir, "index.html"))
 
 if __name__ == "__main__":
-  run()
+  basepath = "http://localhost:8888/"
+  try:
+    basepath = argv[1]
+  except:
+    pass
+  run(basepath)
