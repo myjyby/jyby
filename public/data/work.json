@@ -63,7 +63,7 @@
     "year": [2022, 2023, 2024, 2025],
     "organizations": ["UNDP"],
     "contributions": ["product design", "product development", "team management", "product management"],
-    "skills": ["leadership", "full stack development", "node.js", "postgresql", "express.js", "ejs"]
+    "skills": ["leadership", "full stack development", "node.js", "express.js", "ejs", "postgresql", "leaflet", "azure app services"]
   },
   {
     "category": "Digital products",
@@ -74,7 +74,7 @@
     "year": [2020, 2021, 2022, 2023, 2024, 2025],
     "organizations": ["UNDP"],
     "contributions": ["product design", "product development", "product management"],
-    "skills": ["full stack development", "NLP pipelines", "data science", "python", "node.js", "postgresql", "d3.js"]
+    "skills": ["end-to-end product design", "full stack development", "NLP pipelines", "data science", "conersation modeling", "information visualization", "python", "node.js", "postgresql", "d3.js", "azure app services"]
   },
   {
     "category": "Digital products",
@@ -83,7 +83,8 @@
     "vignette": "public/imgs/qatalog/2019_jb_qatalog.png",
     "description": "Query-Assign and Annotate-Tag-Analyze (Q-a-t-a-log): a no code classification tool for social media analysis.",
     "year": 2019,
-    "organizations": ["UN Global Pulse"]
+    "organizations": ["UN Global Pulse"],
+    "skills": ["end-to-end product design", "full stack development", "social media analytics", "data integration", "data visualization", "python", "node.js", "express.js", "ejs", "postgresql", "d3.js"]
   },
   {
     "category": "Exploratory visualizations",
@@ -127,7 +128,8 @@
     "vignette": "public/imgs/along_the_way/2016_jb_along_the_way.png",
     "description": "",
     "year": 2016,
-    "organizations": ["UN Global Pulse", "UNHCR"]
+    "organizations": ["UN Global Pulse", "UNHCR"],
+    "skills": ["GDAL"]
   },
   {
     "category": "Exploratory visualizations",

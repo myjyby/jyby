@@ -36,7 +36,7 @@ def run (basepath):
   if not exists(pages_dir):
     makedirs(pages_dir)
 
-  template = setBasepath(open(join(pages_dir, "__template__.html"), 'r', encoding='utf-8').read(), basepath)
+  template = setBasepath(open(join(root, "__template__.html"), 'r', encoding='utf-8').read(), basepath)
 
   ## Resolve the relative paths for the home page
   with open(join(root, "index.html"), 'w') as outfile:
