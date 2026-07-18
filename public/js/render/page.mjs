@@ -57,10 +57,14 @@ export const main = function (data, kwargs) {
           else return null;
           // c.title ? `./${strings.makeSafe.call(c.title)}` : null
         });
-      entries.addElems('label', 'year', c => c.year ? [c.year] : [])
-      .html(c => {
-        if (Array.isArray(c)) return `${c[0]} - ${arrays.last.call(c)}`;
-        else return c;
+      entries.addElems('label', 'year', c => c.year ? [{ year: c.year, type: c.type }] : [])
+      .each(function (c) {
+        const { type } = c || {};
+        if (type === 'vignette') d3.select(this).classed('overlay', true)
+      }).html(c => {
+        const { year } = c || {};
+        if (Array.isArray(year)) return `${year[0]} - ${arrays.last.call(year)}`;
+        else return year;
       });
       entries.addElems('div', 'img-container', c => c.vignette?.length ? [c.vignette] : [])
       .addElems('img')
@@ -86,9 +90,21 @@ export const main = function (data, kwargs) {
         .html(c => strings.capitalize.call(c));
       const skills = tags.addElems('div', 'skills', c => c.skills?.length ? [c.skills] : []);
       skills.addElems('label')
-        .html('Skills:')
+        .html('Skills:');
       skills.addElems('div', 'chip', c => c)
-        .html(c => strings.capitalize.call(c))
+        .html(c => strings.capitalize.call(c));
+      const authors = tags.addElems('div', 'authors', c => c.authors?.length ? [c.authors] : []);
+      authors.addElems('label')
+        .html(c => `Author${c.length > 1 ? 's' : ''}:`);
+      authors.addElems('div', 'chip', c => c)
+        .attr('title', c => strings.capitalize.call(c))
+        .html(c => c);
+      const publisher = tags.addElems('div', 'publisher', c => c.publisher ? [c.publisher] : []);
+      publisher.addElems('label')
+        .html('Publisher:');
+      publisher.addElems('div', 'chip')
+        .attr('title', c => strings.capitalize.call(c))
+        .html(c => c);
     }
   });
 }

@@ -51,7 +51,7 @@ menu {
 section {
   margin: 2em 0;
 }
-section.content-section .two-col > div:not(:empty):not(.paragraphs) {
+section.content-section .two-col > div:not(:empty):not(.paragraphs):not(.links) {
   padding: 1em 0;
   /*border-top: 1px solid rgb(50,50,70);*/
   border-top: 1px solid #8c8ca0;
@@ -89,7 +89,11 @@ section.content-section .two-col > div:not(:empty):not(.paragraphs) {
   transform: scale(0.95);
 }
 
-.year {
+.list {
+  margin-bottom: 1em;
+}
+
+.year.overlay {
   position: absolute;
   top: 0.5em;
   left: -0.5em;
@@ -99,6 +103,12 @@ section.content-section .two-col > div:not(:empty):not(.paragraphs) {
   color: #FFF;
   padding: 0.1em 0.5em;
   font-weight: bold;
+}
+
+.year ~ p.title {
+  margin-top: 0.25em;
+  /*display: inline;*/
+  /*margin-left: 2em;*/
 }
 
 .img-container {
@@ -153,13 +163,17 @@ p.description.lead {
 }
 .tags .contributions,
 .tags .skills,
-.tags .organizations {
+.tags .organizations,
+.tags .publisher,
+.tags .authors {
   font-size: 0.5em;
   margin-left: -0.5em;
 }
 .tags .contributions label,
 .tags .skills label,
-.tags .organizations label {
+.tags .organizations label,
+.tags .publisher label,
+.tags .authors label {
   font-size: 1.25em;
   margin: 0 0.5em 0.25em 0.5em;
   text-decoration: underline;

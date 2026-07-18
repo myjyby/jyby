@@ -44,6 +44,17 @@
     "skills": ["html", "javascript"]
   },
   {
+    "category": "Digital transformation and strategy at the UN",
+    "type": "vignette",
+    "title": "Demystifying the AI monolith",
+    "vignette": "public/imgs/ai_triptych/2024_jb_ai_triptych.png",
+    "description": "A meta analysis of 29 projects conducted by the UNDP Accelerator Labs that form a tryptich of data innovations for sustainable development.",
+    "year": 2024,
+    "organizations": ["UNDP"],
+    "contributions": ["thought leadership", "qualitative analysis", "presentation"],
+    "skills": ["leadership", "html", "javascript", "data visualization", "d3.js"]
+  },
+  {
     "category": "Digital products",
     "type": "vignette",
     "title": "The SDG Commons",
@@ -62,7 +73,7 @@
     "description": "A multi-media documentation platform for reflective practitioners.",
     "year": [2022, 2023, 2024, 2025],
     "organizations": ["UNDP"],
-    "contributions": ["product design", "product development", "team management", "product management"],
+    "contributions": ["end-to-end product design", "product development", "team management", "product management"],
     "skills": ["leadership", "full stack development", "node.js", "express.js", "ejs", "postgresql", "leaflet", "azure app services"]
   },
   {
@@ -73,8 +84,8 @@
     "description": "An insights platform that draws from the Whatsapp exchanges of the world’s largest learning network on sustainable development challenges.",
     "year": [2020, 2021, 2022, 2023, 2024, 2025],
     "organizations": ["UNDP"],
-    "contributions": ["product design", "product development", "product management"],
-    "skills": ["end-to-end product design", "full stack development", "NLP pipelines", "data science", "conersation modeling", "information visualization", "python", "node.js", "postgresql", "d3.js", "azure app services"]
+    "contributions": ["end-to-end product design", "product development", "product management"],
+    "skills": ["full stack development", "NLP pipelines", "data science", "conersation modeling", "information visualization", "python", "node.js", "postgresql", "d3.js", "azure app services"]
   },
   {
     "category": "Digital products",
@@ -84,7 +95,8 @@
     "description": "Query-Assign and Annotate-Tag-Analyze (Q-a-t-a-log): a no code classification tool for social media analysis.",
     "year": 2019,
     "organizations": ["UN Global Pulse"],
-    "skills": ["end-to-end product design", "full stack development", "social media analytics", "data integration", "data visualization", "python", "node.js", "express.js", "ejs", "postgresql", "d3.js"]
+    "contributions": ["end-to-end product design", "product development"],
+    "skills": ["full stack development", "social media analytics", "data integration", "data visualization", "python", "node.js", "express.js", "ejs", "postgresql", "d3.js"]
   },
   {
     "category": "Exploratory visualizations",
@@ -101,7 +113,8 @@
     "title": "Ras le bol du raz de marée",
     "vignette": "public/imgs/ras_le_bol/2024_jb_ras_le_bol_du_raz_de_maree.png",
     "description": "An interactive visualization of party dynamics between the two rounds of the French 2024 legislative elections.",
-    "year": 2024
+    "year": 2024,
+    "contributions": ["prototype design"]
   },
   {
     "category": "Exploratory visualizations",
@@ -129,7 +142,7 @@
     "description": "",
     "year": 2016,
     "organizations": ["UN Global Pulse", "UNHCR"],
-    "skills": ["GDAL"]
+    "skills": ["Python", "NLP piplelines", "Text classification", "GDAL", "javascript", "d3.js", "postgresql"]
   },
   {
     "category": "Exploratory visualizations",
@@ -161,18 +174,9 @@
   {
     "category": "Narrative visualizations",
     "type": "vignette",
-    "title": "An AI triptych for sustainable development",
-    "vignette": "public/imgs/ai_triptych/2024_jb_ai_triptych.png",
-    "description": "A meta analysis of 29 data innovation projects conducted by the UNDP Accelerator Labs.",
-    "year": 2024,
-    "organizations": ["UNDP"]
-  },
-  {
-    "category": "Narrative visualizations",
-    "type": "vignette",
-    "title": "Data for Refugees",
+    "title": "Towards understanding Syrian refugee integration in Turkey",
     "vignette": "public/imgs/d4r/2019_jb_d4r_homophily.png",
-    "description": "",
+    "description": "Data for Refugees (D4R)",
     "year": 2019,
     "organizations": ["UN Global Pulse", "UNHCR"]
   },

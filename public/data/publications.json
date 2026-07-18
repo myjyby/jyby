@@ -1,18 +1,56 @@
 [
+  {
+    "category": null,
+    "type": "link",
+    "title": null,
+    "vignette": "",
+    "description": "Find my full list of publications on Google Scholar.",
+    "link": "https://scholar.google.com/citations?user=kUtMZnIAAAAJ",
+    "year": null
+  },
   { 
     "category": "Peer reviewed",
     "type": "list",
-    "authors": "Yu et al.",
     "title": "Linguistic Characteristics of Social Media Messages Spreading across Geographic and Linguistic Boundaries.",
     "publisher": "Proceedings of ECSM 2022, Krakow, POL.",
-    "year": 2022
+    "authors": ["Xinchen Yu", "Jeremy Boy", "Rene Clausen Nielsen", "Lingzi Hong"],
+    "year": 2022,
+    "link": "https://papers.academic-conferences.org/index.php/ecsm/article/view/151/144"
   },
   {
     "category": "Peer reviewed",
     "type": "list",
-    "authors": "Yu et al.",
     "title": "Causal Impact Model to Evaluate the Diffusion Effect of Social Media Campaigns.",
     "publisher": "Proceedings of ECSCW 2022, Coimbra, PRT.",
-    "year": 2022
+    "authors": ["Xinchen Yu", "Afra Mashhadi", "Jeremy Boy", "Rene Clausen Nielsen", "Lingzi Hong"],
+    "year": 2022,
+    "link": "https://dl.eusset.eu/server/api/core/bitstreams/e14eb2f7-02b9-4934-9a6b-6fc045905211/content"
+  },
+  {
+    "category": "Peer reviewed",
+    "type": "list",
+    "title": "Data-powered positive deviance: Combining traditional and non-traditional data to identify and characterise development-related outperformers.",
+    "publisher": "Development Engineering.",
+    "authors": ["Basma Albanna", "Richard Heeks", "Andreas Pawelke", "Jeremy Boy", "Julia Handl", "Andreas Gluecker"],
+    "year": 2021,
+    "link": "https://link.springer.com/chapter/10.1007/978-3-030-60975-7_33"
+  },
+  {
+    "category": "Peer reviewed",
+    "type": "list",
+    "title": "The Effect of Structural Affinity on the Diffusion of a Transnational Online Movement: The Case of# MeToo.",
+    "publisher": "Proceedings of SOCINFO 2020, Pisa, ITA.",
+    "authors": ["Xinchen Yu", "Shashidhar Reddy Daida", "Jeremy Boy", "Lingzi Hong"],
+    "year": 2021,
+    "link": "https://www.sciencedirect.com/science/article/pii/S2352728521000324"
+  },
+  {
+    "category": "Frameworks, Handbooks and Reports",
+    "type": "list",
+    "title": "AI and Human Development: A Qualitative Perspective from Bangladesh.",
+    "publisher": "UNDP",
+    "authors": ["Iffat Anjum", "Jeremy Boy", "Zulkarin Jahangir", "Pratyasha Saha"],
+    "year": 2026,
+    "link": "https://www.undp.org/acceleratorlabs/publications/ai-and-human-development-qualitative-perspective-bangladesh"
   }
 ]
