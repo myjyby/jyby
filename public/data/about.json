@@ -4,7 +4,7 @@
     "type": "paragraph",
     "title": null,
     "vignette": "",
-    "description": "Hi! My name is Jeremy Boy. I am a senior creative technologist and scientist with 15 years of experience working at the intersection of research, analytics, product, policy and programme, focused on the benefits and trade-offs of data, advanced computational techniques and design when pplied to public policy, humanitarian action, and sustainable development. I am currently the lead data scientist of a global learning network on sustainable development priorities and challenges&mdash;the UNDP Accelerator Labs Network. My professional experience spans from data and AI thought leadership and strategy in the public sector  to team management,  to end-to-end visual analytics product development, to visual storytelling. I have an interdisciplinary background in graphic design and multi-media art, computer science, cognitive psychology, and science and technology studies.",
+    "description": "Hi! My name is Jeremy Boy. I am a strategic leader, interdisciplinary researcher, and open source advocate at the intersection of data science, data for development, responsible data and AI use, information visualization, and digital product design. I bring 15 years of global experience across international public organizations and academia, as well as a past in freelance design. Over the last decade, my work has helped shape both policy and practice inside the UN. I thrive in high-impact environments where advanced computational techniques and data can be combined to address complex socio-technical problems. My background ranges from graphic design and multi-media art to computer science, cognitive psychology, information sciences, and computational social sciences. I am both French and Kiwi.",
     "year": null
   },
   {
@@ -12,12 +12,31 @@
     "type": "link",
     "title": null,
     "vignette": "",
-    "description": "Read more about my profesional experiences on LinkedIn:",
+    "description": "Check out my CV",
+    "link": "https://docs.google.com/document/d/1MMWzXW5kVixTNxFn91DlZMvYC5p92cSe0oPePPmIEeU/edit?tab=t.0#heading=h.kephgf5sf2lv",
+    "year": null
+  },{
+    "category": null,
+    "type": "link",
+    "title": null,
+    "vignette": "",
+    "description": "Or read more about my profesional experiences on LinkedIn",
     "link": "https://www.linkedin.com/in/myjyby/",
     "year": null
   },
   {
-    "category": "Public speaking",
+    "category": "Recent talks",
+    "type": "vignette",
+    "title": "AI and Human Development: A Qualitative Perspective from Bangladesh",
+    "vignette": "public/imgs/presentations/pairs_bangladesh.jpeg",
+    "description": "Short and joint presentation of the results of a series of consultations on public perceptions of AI in Bangladesh.",
+    "year": 2026,
+    "organizations": ["Participatory AI Research and Practice Symposium (PAIRS)", "UNDP"],
+    "contributions": ["presenter"],
+    "link": "https://www.youtube.com/watch?v=nwY292TZFPA&t=2721s"
+  },
+  {
+    "category": "Recent talks",
     "type": "vignette",
     "title": "What and How we Learned",
     "vignette": "public/imgs/presentations/sdg_commons_launch.jpeg",
@@ -28,7 +47,7 @@
     "link": "https://undp.zoom.us/rec/play/Pp42xsI-UqBg8dg58YYs7HNCs17Wg4PsQx9vY9aYGR2rlvHfXxvc6PwKAdZ2mYCMXWnDbZA4CTZZZlP3.jlZxhUxsmIFz8rzB"
   },
   {
-    "category": "Public speaking",
+    "category": "Recent talks",
     "type": "vignette",
     "title": "Artificial Intelligence for Collective Intelligence",
     "vignette": "public/imgs/presentations/ai4ci.jpeg",
