@@ -48,6 +48,7 @@ def run (basepath):
     else:
       category_page = splitext(k)[0]
       page_dir = join(pages_dir, category_page.lower())
+      print(f"look for page dir: {page_dir}")
       if not exists(page_dir):
         makedirs(page_dir)
 

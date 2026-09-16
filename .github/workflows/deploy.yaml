@@ -38,7 +38,7 @@ jobs:
         id: git-check
         run: |
           git status --porcelain
-          echo "::set-output name=dirty::$(git status --porcelain | wc -l)"
+          echo "dirty::$(git status --porcelain | wc -l)" >> $GITHUB_OUTPUT
 
       - name: Commit and push generated files
         if: steps.git-check.outputs.dirty != '0'
