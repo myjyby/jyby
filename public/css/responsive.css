@@ -1,5 +1,5 @@
 /* SM */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   header h1 {
     margin-bottom: 1em;
   }
@@ -13,7 +13,7 @@
     margin-bottom: 1em;
   }
 }
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   section {
     margin: 2em 0;
   }

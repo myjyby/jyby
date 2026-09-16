@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap");
 /* SM */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   header h1 {
     margin-bottom: 1em;
   }
@@ -14,7 +14,7 @@
     margin-bottom: 1em;
   }
 }
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   section {
     margin: 2em 0;
   }
@@ -110,7 +110,7 @@ menu {
   transition: transform 0.25s;
 }
 .vignette a img:hover {
-  transform: scale(0.95);
+  transform: scale(1.05);
 }
 
 .list {
