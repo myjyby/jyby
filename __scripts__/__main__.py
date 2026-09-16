@@ -56,6 +56,7 @@ def run (basepath):
       with open(join(page_dir, "index.html"), 'w') as outfile:
         # html = setBasepath(template, basepath)
         outfile.write(template)
+        print(join(page_dir, "index.html"), outfile)
       # copyfile(join(pages_dir, "__template__.html"), join(page_dir, "index.html"))
 
       data = loads(open(join(root, "public/data/", k)).read())
