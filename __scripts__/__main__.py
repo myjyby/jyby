@@ -71,6 +71,8 @@ def run (basepath):
             outfile.write(template)
           # copyfile(join(pages_dir, "__template__.html"), join(content_page_dir, "index.html"))
 
+  print(listdir(pages_dir))
+
 if __name__ == "__main__":
   basepath = "http://localhost:8888/"
   try:
