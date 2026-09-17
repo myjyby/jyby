@@ -29,7 +29,7 @@ def run (basepath):
   """
   Get the data
   """
-  this_dir = dirname(__file__)
+  this_dir = Path(dirname(__file__)).name
   root = join(this_dir, "../")
 
   pages_dir = join(root, "pages/")
@@ -48,7 +48,6 @@ def run (basepath):
     else:
       category_page = splitext(k)[0]
       page_dir = join(pages_dir, category_page.lower())
-      print(f"look for page dir: {page_dir}")
       if not exists(page_dir):
         makedirs(page_dir)
 
@@ -56,7 +55,6 @@ def run (basepath):
       with open(join(page_dir, "index.html"), 'w') as outfile:
         # html = setBasepath(template, basepath)
         outfile.write(template)
-        print(join(page_dir, "index.html"), outfile)
       # copyfile(join(pages_dir, "__template__.html"), join(page_dir, "index.html"))
 
       data = loads(open(join(root, "public/data/", k)).read())
@@ -66,8 +64,6 @@ def run (basepath):
           content_page_dir = join(page_dir, content_page.lower())
           if not exists(content_page_dir):
             makedirs(content_page_dir)
-
-          print(content_page_dir)
 
           ## Resolve the relative paths
           with open(join(content_page_dir, "index.html"), 'w') as outfile:
