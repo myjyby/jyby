@@ -42,7 +42,7 @@ jobs:
         run: |
           git status --porcelain
           echo "dirty=$(git status --porcelain | wc -l)" >> $GITHUB_OUTPUT
-          echo steps.git-check.outputs.dirty
+          echo "$(steps.git-check.outputs.dirty)"
       # echo "::set-output name=dirty::$(git status --porcelain | wc -l)"
 
       - name: Commit and push generated files
