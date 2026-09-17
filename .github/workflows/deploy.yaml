@@ -46,7 +46,8 @@ jobs:
       # echo "::set-output name=dirty::$(git status --porcelain | wc -l)"
 
       - name: Check generated files
-        run: echo "{steps.git-check.outputs.dirty}"
+        run: |
+          echo "${{ toJSON(steps.git-check.outputs) }}"
 
       - name: Commit and push generated files
         if: steps.git-check.outputs.dirty != '0'
