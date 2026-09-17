@@ -31,8 +31,11 @@ jobs:
       #     python -m pip install --upgrade pip
       #     pip install Pillow beautifulsoup4 requests
 
+      - name: Make scripts executable
+        run: chmod +x __scripts__/__main__.py
+
       - name: Run generation scripts
-        run: python __scripts__ https://myjyby.github.io/jyby/
+        run: python __scripts__/__main__.py https://myjyby.github.io/jyby/
 
       - name: Check for changes
         id: git-check
