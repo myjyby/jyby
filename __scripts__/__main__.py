@@ -67,6 +67,8 @@ def run (basepath):
           if not exists(content_page_dir):
             makedirs(content_page_dir)
 
+          print(content_page_dir)
+
           ## Resolve the relative paths
           with open(join(content_page_dir, "index.html"), 'w') as outfile:
             # html = setBasepath(template, basepath)
