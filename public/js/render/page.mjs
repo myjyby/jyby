@@ -1,4 +1,4 @@
-import { d3, strings, arrays } from '../helpers/index.mjs';
+import { d3, strings, arrays, interaction } from '../helpers/index.mjs';
 
 export const main = function (data, kwargs) {
   const { page, path } = kwargs || {};
@@ -107,4 +107,7 @@ export const main = function (data, kwargs) {
         .html(c => c);
     }
   });
+
+  interaction.setScrollAnimations(d3.selectAll('h2.category').nodes())
+  interaction.setScrollAnimations(d3.selectAll('div.vignette').nodes())
 }
