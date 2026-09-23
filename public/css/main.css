@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap");
 /* SM */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header h1 {
     padding: 0.5em 0;
+  }
+  header .two-col menu {
+    margin-top: 1em;
   }
 
   section {
@@ -10,11 +13,14 @@
   }
   section.content-section .two-col > div:first-child:not(:empty):not(.paragraphs):not(.links) {
     border-top: 3px solid #323246;
-    padding-top: 0.5em;
-    margin-bottom: 1em;
+    padding-top: 1em;
+    margin-bottom: 2em;
+  }
+  section.content-section .two-col .vignettes .vignette {
+    margin-bottom: 2em;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header h1 {
     padding: 0.5em 0 0 0;
   }
@@ -41,7 +47,7 @@
     grid-template-columns: 1fr;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .two-col .vignettes {
     display: grid;
     grid-gap: 1em;
