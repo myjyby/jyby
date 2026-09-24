@@ -20,7 +20,22 @@
     margin-bottom: 2em;
   }
 }
+@media (min-width: 640px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .two-col .vignettes {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+  }
+}
 @media (min-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+
   header h1 {
     padding: 0.5em 0 0 0;
   }
@@ -42,15 +57,6 @@
     grid-gap: 2em;
   }
   .two-col .vignettes {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 1280px) {
-  .two-col .vignettes {
-    display: grid;
-    grid-gap: 1em;
     grid-template-columns: 1fr 1fr;
   }
 }

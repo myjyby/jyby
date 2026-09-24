@@ -3,6 +3,11 @@ import * as render from './render/index.mjs';
 
 async function onLoad () {
   /*
+  Determine main language
+  */
+  const userLang = navigator.language || navigator.userLanguage; 
+  console.log("The language is: " + userLang);
+  /*
   Determine which page to load
   */
   const url = new URL(window.location);
